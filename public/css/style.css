@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    color: #005e9b;
+    font-family: "Old Standard TT", serif;
+}
+.intro {
+    background: #ebe9d7;
+    padding: 1% 8%;
+    background-image: url("../images/sketch_10.png"), url("../images/rectangle_18.png"), url("../images/sketch_11.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left 0px top 140px, left 509px top 226px, right 0px top 513px;
+    background-size: 118px, 313px, 187px;
+}
+.searchBar {
+    border-bottom: 2px solid #005e9b;
+    width: 8rem;
+    cursor: text;
+}
+.searchIcon {
+    width: 20%;
+    margin-left: auto;
+}
+.heroHeader {
+    font-family: "Old Standard TT", serif;
+}
+.heroLarge {
+    font-size: 5rem;
+}
+.heroSecond {
+    margin-top: -3.5rem;
+}
+.heroSmall {
+    font-size: 1.8rem;
+}
+.heroText {
+    padding-top: 4%;
+    padding-bottom: 8%;
+}
+.what, .how {
+    font-family: "DM Sans", sans-serif;
+    width: 27%;
+}
+.heroTextMain {
+    text-align: justify;
+}
+button {
+    border: 2px solid #005e9b;
+    background-color: #ebe9d7;
+    color: #005e9b;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 0 1rem;
+}
+button:hover {
+    background-color: #005e9b;
+    color: white;
+}
+.line {
+    border: 1px solid #005e9b;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.heroBottom {
+    font-family: "DM Sans", sans-serif;
+}
+.arrow img {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.arrow img:hover {
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
+
+.whatWeDo {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 6%;
+    padding-bottom: 4%;
+    background-color: #005c93;
+    color: white;
+    background-image: url("../images/sketch_9.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: right 0px top 600px;
+}
+.whatHead {
+    font-family: "DM Sans", sans-serif;
+}
+.whatLeft {
+    padding-top: 30%;
+}
+.whatText {
+    padding-top: 25%;
+}
+.whatTextContent {
+    text-decoration: underline; 
+    text-underline-offset: 1rem;
+    text-decoration-thickness: 2px;
+}
+.whatWeDo img:hover {
+    animation: rotateAnimation 1s linear 2;
+}
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
+.caseStudies {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: #ebe9d7;
+}
+.featured {
+    position: relative;
+    top: 40px;
+    right: 100px;
+}
+.caseMain {
+    font-size: 5rem;
+}
+.projectLine {
+    border: 1px solid #005e9b;
+}
+.caseLeftBottom, .caseRightBottom {
+    padding-top: 10%;
+}
+.caseRight {
+    padding-top: 12%;
+}
+.caseButton {
+    font-family: "DM Sans", sans-serif;
+    padding-top: 3%;
+}
