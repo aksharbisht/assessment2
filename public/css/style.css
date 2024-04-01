@@ -67,6 +67,7 @@ button {
     border-radius: 20px;
     transition: 0.5s;
     padding: 0 1rem;
+    font-family: "DM Sans", sans-serif;
 }
 button:hover {
     background-color: #005e9b;
@@ -168,11 +169,14 @@ button:hover {
     background-color: #005e9b;
     position: relative;
     color: white;
+    background-image: url("../images/who-left.png"), url("../images/who-right.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 0 top 80px, right 0 top 330px;
 }
 .smm {
     position: absolute;
-    top: -50px;
-    left: 1150px;
+    top: -80px;
+    left: 1100px;
 }
 .whoSub {
     font-family: "DM Sans", sans-serif;
@@ -185,7 +189,7 @@ button:hover {
     margin: auto;
     padding-top: 5%;
 }
-.whoLine, {
+.whoLine {
     border: 1px solid white;
     position: absolute;
     left: 0;
@@ -208,19 +212,156 @@ button:hover {
 .processLeftContent {
     border-bottom: 2px solid #005e9b;
 }
+.processHead {
+    padding-bottom: 3%;
+}
+.processNumber {
+    font-size: 1.5rem;
+}
+.processText {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 0.8;
+}
+.processTextSub {
+    font-family: "DM Sans", sans-serif;
+    padding-bottom: 5%;
+}
 .processLeftTop {
-    padding-left: 8%;
-    padding-top: 6%;
+    padding-left: 16%;
+    padding-top: 15%;
 }
 .processLeftMid, .processLeftBottom {
-    padding-left: 8%;
-}
-.processLeftTop {
+    padding-left: 16%;
+    padding-top: 5%;
+    width: 85%;
 }
 .processHead {
     font-size: 5rem;
 }
+.processRight {
+    border-left: 2px solid #005e9b;
+}
 
+.phone {
+    display: none;
+}
+.launch {
+    border-bottom: 2px solid #005e9b;
+}
+.launchLeft {
+    background-color: #005e9b;
+    width: 50%;
+    padding: 10% 12%;
+}
+.launchRight {
+    width: 50%;
+    background-color: #ebe9d7;
+    padding-top: 16%;
+    background-image: url("../images/launch.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: top 100px right 0;
+}
+.launchSub {
+    font-family: "DM Sans", sans-serif;
+    width: 69%;
+    text-align: center;
+    margin: auto;
+}
+.testimonials {
+    padding: 4% 8%;
+    background-color: #ebe9d7;
+    position: relative;
+    background-image: url("../images/sketch_11.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: right 0 top 100px;
+}
+.whatTheySayImg {
+    position: absolute;
+    top: -80px;
+    left: 1100px;
+}
+.testimonialHead {
+    font-size: 5rem;
+}
+.quote {
+    font-size: 5rem;
+    position: relative;
+    width: 4%;
+}
+.quote div {
+    position: absolute;
+    top: -40px;
+}
+.testimonialText {
+    font-size: 1.5rem;
+    line-height: 1;
+    width: 68%;
+    text-align: justify;
+}
+.customer {
+    font-family: "DM Sans", sans-serif;
+}
+.review {
+    background-color: #ebe9d7;
+    border-top:  2px solid #005e9b;
+}
+.reviewLeft {
+    border-right: 2px solid #005e9b;
+    width: 50%;
+    padding: 16% 6%;
+    background-image: url("../images/reviewLeft.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: top 80px left 0px;
+}
+.reviewLarge {
+    font-size: 5rem;
+}
+.reviewSecond {
+    margin-top: -3.5rem;
+}
+.reviewSmall {
+    font-size: 1.8rem;
+}
+.reviewBottom {
+    margin-top: -3.5rem;
+}
+.reviewSub {
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+}
+.reviewRight {
+    padding: 10% 3%;
+    padding-right: 9%;
+    background-image: url("../images/sketch.png");
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: right 0 bottom 50px;
+}
+.aboutText, .project {
+    font-size: 3rem;
+}
+.reviewInput {
+    border-bottom: 2px solid #005c93 !important;
+    background-color: #ebe9d7;
+    font-family: "DM Sans", sans-serif;
+}
+::placeholder {
+    color: #005e9b;
+}
+.help {
+    font-family: "DM Sans", sans-serif;
+}
+.aboutButtons button {
+    font-size: .9rem !important;
+    font-weight: bold;
+}
+.aboutButtonsTop {
+    padding-bottom: 1rem;
+}
 .footer {
     padding: 4% 8%;
     background-color: #005e9b;
@@ -235,16 +376,243 @@ button:hover {
     right: 0;
     top: 100px;
 }
-.footerLinks {
-    padding-top: 3%;
-    font-size: 0.7rem;
-}
-.footerLinkContent > div {
-    cursor: pointer;
-}
-.footerHeadContent {
-
-}
 .footerLinkContent {
-
+    padding-top: 30%;
+    font-size: 0.8rem;
 } 
+/* Media queries */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+    .intro {
+        padding: 1% 1%;
+        background-image: none;
+    }
+    .heroLarge {
+        font-size: 2rem;
+    }
+    .smm, .whatTheySayImg {
+        display: none;
+    }
+    .heroSecond {
+        margin-top: 0;
+    }
+    .heroSmall {
+        display: none !important;
+    }
+    .heroText {
+        flex-direction: column !important;
+    }
+    .what, .how {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .whatWeDo {
+        flex-direction: column !important;
+        background-image: none;
+        padding: 1% 1%;
+    }
+    .whatWeDo img {
+        display: none;
+    }
+    .whatLeft, .whatText {
+        padding-top: 1%;
+    }
+    .caseStudies {
+        padding: 1% 1%;
+    }
+    .featured {
+        top:10px;
+        left: 0px;
+    }
+    .caseMain {
+        font-size: 2rem;
+    }
+    .caseContent {
+        flex-direction: column !important;
+    }
+    .caseImage {
+        width: 90%;
+        margin: auto;
+    }
+    .caseImage img {
+        width: 100%;
+    }
+    .whoWeAre {
+        padding: 1% 1%;
+        background-image: none;
+    }
+    .redefining {
+        width: 100%;
+    }
+    .whoBottom {
+        width: 100%;
+        text-align: justify;
+    }
+    .whoLine {
+        display: none;
+    }
+    .process {
+        flex-direction: column !important;
+    }
+    .processHead {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .processLeftTop, .processLeftMid, .processLeftBottom {
+        padding: 2% 1%;
+        width: 100%;
+    }
+    .processTextSub {
+        text-align: justify;
+    }
+    .processRight {
+        border: none !important;
+    }
+    .processRight img {
+        height: auto !important;
+        width: 100%;
+    }
+    .launch {
+        flex-direction: column !important;
+    }
+    .launchLeft {
+        width: 100%;
+        padding: 2% 3%;
+    }
+    .launchRight {
+        width: 100%;
+        padding-bottom: 2%;
+        background-image: none;
+    }
+    .phone {
+        display: block;
+    }
+    .desktop {
+        display: none !important;
+    }
+    .launchPhone {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 2%;
+    }
+    .launchSub {
+        text-align: justify;
+        width: 100%;
+        padding: 0 1%;
+    }
+    .testimonials {
+        padding: 2% 1%;
+        background-image: none;
+    }
+    .testimonialHead {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .quote {
+        display: none;
+    }
+    .testimonialText {
+        width: 100%;
+    }
+    .testimonialBottom {
+        padding-left: 0 !important;
+    }
+    .review {
+        flex-direction: column !important;
+        padding: 2% 1%;
+    }
+    .reviewLeft {
+        width: 100%;
+        border-right: none;
+        padding: 0;
+        background-image: none;
+    }
+    .reviewSub {
+        width: 100%;
+        text-align: justify;
+    }
+    .reviewRight {
+        width: 100% !important;
+        padding: 2% 1%;
+        background-image: none;
+    }
+    .aboutText, .project {
+        font-size: 2rem;
+    }
+    .aboutButtons {
+        flex-direction: column;
+    }
+    .aboutButtons button {
+        margin-top: 10px;
+    }
+    .aboutButtonsTop {
+        padding-bottom: 0;
+    }
+    .footer {
+        padding: 2% 1%;
+    }
+    .footerLine {
+        display: none;
+    }
+    .footerHead {
+        flex-direction: column !important;
+    }
+    .footerLinkContent {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+}
+/* For tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .intro {
+        background-image: none;
+    }
+    .whatWeDo {
+        background-image: none;
+    }
+    .whatWeDo img {
+        display: none;
+    }
+    .smm, .whatTheySayImg {
+        display: none;
+    }
+    .what, .how {
+        width: 40%;
+    }
+    .caseContent {
+        flex-direction: column !important;
+    }
+    .caseLeftTop, .caseLeftBottom, .caseRightTop, .caseRightBottom {
+        text-align: center;
+    }
+    .process {
+        flex-direction: column !important;
+    }
+    .processRight {
+        text-align: center;
+    }
+    .launchLeft {
+        padding: 10% 7%;
+    }
+    .launchLeft img {
+        height: 380PX;
+        padding: 0;
+    }
+    .review {
+        flex-direction: column !important;
+    }
+    .reviewLeft {
+        width: 100%;
+    }
+    .reviewRight {
+        width: 100% !important;
+    }
+    .aboutButtonsTop {
+        width: 80% !important;
+    }
+    .footerLine {
+        display: none;
+    }
+}
