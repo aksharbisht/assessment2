@@ -3,6 +3,19 @@
 body {
     color: #005e9b;
     font-family: "Old Standard TT", serif;
+    position: relative;
+}
+.texture {
+    background-image: url("../images/Texture.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: repeat;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    opacity: 0.5;
 }
 .intro {
     background: #ebe9d7;
