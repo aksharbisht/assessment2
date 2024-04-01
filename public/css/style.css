@@ -21,6 +21,22 @@ body {
     width: 20%;
     margin-left: auto;
 }
+.circle:hover {
+    animation: rotateCircle 1s forwards;
+}
+.circle {
+    animation-name: reverse; 
+    animation-duration: 1s; 
+}
+@keyframes reverse {
+    0% {transform: rotate(-16deg);}
+	100% {transform: rotate(0deg);}
+}
+@keyframes rotateCircle {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-16deg);}
+}
+
 .heroHeader {
     font-family: "Old Standard TT", serif;
 }
@@ -102,11 +118,11 @@ button:hover {
     text-decoration-thickness: 2px;
 }
 .whatWeDo img:hover {
-    animation: rotateAnimation 1s linear 2;
+    animation: rotateAnimation 1s linear 1;
 }
 @keyframes rotateAnimation {
-	from {transform: rotateY(45deg);}
-	to {transform: rotateY(225deg);}
+	0% {transform: rotateY(0deg);}
+	100% {transform: rotateY(360deg);}
 }
 .caseStudies {
     padding-left: 8%;
@@ -136,3 +152,99 @@ button:hover {
     font-family: "DM Sans", sans-serif;
     padding-top: 3%;
 }
+.caseLeftTop, .caseLeftBottom, .caseRightTop, .caseRightBottom {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.caseLeftTop:hover, .caseLeftBottom:hover, .caseRightTop:hover, .caseRightBottom:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+.whoWeAre {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    background-color: #005e9b;
+    position: relative;
+    color: white;
+}
+.smm {
+    position: absolute;
+    top: -50px;
+    left: 1150px;
+}
+.whoSub {
+    font-family: "DM Sans", sans-serif;
+}
+.redefining {
+    font-size: 5rem;
+    width: 70%;
+    text-align: center;
+    line-height: 0.98;
+    margin: auto;
+    padding-top: 5%;
+}
+.whoLine, {
+    border: 1px solid white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 420px;
+}
+.whoBottom {
+    padding-top: 5%;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.whoBottomImg {
+    padding-top: 3%;
+}
+.process {
+    background-color: #ebe9d7;
+    border-bottom: 2px solid #005e9b;
+}
+.processLeftContent {
+    border-bottom: 2px solid #005e9b;
+}
+.processLeftTop {
+    padding-left: 8%;
+    padding-top: 6%;
+}
+.processLeftMid, .processLeftBottom {
+    padding-left: 8%;
+}
+.processLeftTop {
+}
+.processHead {
+    font-size: 5rem;
+}
+
+.footer {
+    padding: 4% 8%;
+    background-color: #005e9b;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    position: relative;
+}
+.footerLine {
+    border: 1px solid white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+}
+.footerLinks {
+    padding-top: 3%;
+    font-size: 0.7rem;
+}
+.footerLinkContent > div {
+    cursor: pointer;
+}
+.footerHeadContent {
+
+}
+.footerLinkContent {
+
+} 
